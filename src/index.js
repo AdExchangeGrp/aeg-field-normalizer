@@ -8,6 +8,14 @@ export function normalizeNumber(num) {
 	return conversion;
 }
 
+export function normalizeNumberZeroOrGreater(num) {
+	let conversion = normalizeNumber(num);
+	if (conversion < 0) {
+		conversion = 0;
+	}
+	return conversion;
+}
+
 export function normalizeField(field) {
 	if (!field) {
 		field = 'BLANK';
