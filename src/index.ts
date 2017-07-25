@@ -1,4 +1,4 @@
-export function normalizeNumber(num: string | number): number {
+export function normalizeNumber (num: string | number): number {
 
 	let conversion = Number(num);
 
@@ -12,7 +12,7 @@ export function normalizeNumber(num: string | number): number {
 
 }
 
-export function normalizeNumberZeroOrGreater(num: string | number): number {
+export function normalizeNumberZeroOrGreater (num: string | number): number {
 
 	let conversion = normalizeNumber(num);
 
@@ -26,7 +26,7 @@ export function normalizeNumberZeroOrGreater(num: string | number): number {
 
 }
 
-export function normalizeField(field: string): string {
+export function normalizeField (field: string): string {
 
 	if (!field) {
 
